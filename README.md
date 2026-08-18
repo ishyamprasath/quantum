@@ -128,6 +128,15 @@ Next.js 16 (App Router) · React 19 · TypeScript · Tailwind v4 ·
 `@huggingface/transformers` v3 on ONNX Runtime Web. Deployed on Vercel as static pages —
 there is no server-side inference to pay for.
 
+## Deliverables
+
+| | |
+|---|---|
+| Live app | https://quantum-pi-blush.vercel.app |
+| Source | https://github.com/ishyamprasath/quantum |
+| Slide deck | [`docs/ONDRU_PPT.pptx`](docs/ONDRU_PPT.pptx) — 9 slides, light theme |
+| Demo video | 3:12 walkthrough, recorded against the live deployment |
+
 ## Scope
 
 ONDRU produces a **reading order** and a **suggested desk**. It cannot close a complaint,
