@@ -134,7 +134,7 @@ there is no server-side inference to pay for.
 |---|---|
 | Live app | https://quantum-pi-blush.vercel.app |
 | Source | https://github.com/ishyamprasath/quantum |
-| Slide deck | [`docs/ONDRU_PPT.pptx`](docs/ONDRU_PPT.pptx) — 9 slides, light theme |
+| Slide deck | [`docs/ONDRU_PPT.pdf`](docs/ONDRU_PPT.pdf) or [`.pptx`](docs/ONDRU_PPT.pptx), 9 slides |
 | Demo video | [3:12 walkthrough](https://drive.google.com/file/d/1wskAFJJ6Vx5H08E7pGRBakwX2vZdtDsc/view?usp=sharing), recorded against the live deployment |
 
 ## Scope
