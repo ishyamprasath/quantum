@@ -48,7 +48,7 @@ export default function EvaluationPage() {
       else await initEngine(() => {});
       const eng = currentEngine().id;
       if (target === "neural" && eng !== "neural") {
-        setNote("model could not be fetched — only the fallback is scored below.");
+        setNote("model could not be fetched, so only the fallback is scored below.");
         continue;
       }
       const res = await triage(CORPUS, eng, DEFAULT_THRESHOLDS[eng]);
@@ -103,7 +103,7 @@ export default function EvaluationPage() {
       <p className="mt-2 max-w-[68ch] text-[15px] leading-relaxed text-ink-2">
         Every number on this page is computed live in your browser when you press the
         button, against {CORPUS_STATS.total} hand-labelled complaints. Nothing is
-        hard-coded. If the model gets worse, this page gets worse — which is the only
+        hard-coded. If the model gets worse, this page gets worse, which is the only
         way a metric is worth quoting.
       </p>
 
@@ -138,7 +138,7 @@ export default function EvaluationPage() {
           <h2 className="mt-12 text-[20px] font-semibold tracking-tight">Head to head</h2>
           <p className="mt-1.5 max-w-[68ch] text-[14px] text-ink-2">
             The lexical fallback is scored on the same set, at its own tuned thresholds.
-            It is not a strawman — it is what the desk actually gets when the model
+            It is not a strawman. It is what the desk actually gets when the model
             cannot be downloaded, so it deserves an honest column.
           </p>
           <div className="mt-4 overflow-x-auto">
@@ -162,12 +162,12 @@ export default function EvaluationPage() {
                     m: "pairwise, over all 4,950 complaint pairs",
                   },
                   {
-                    k: "— precision",
+                    k: "· precision",
                     f: (r: Row) => pct(r.dedupe.precision),
                     m: "of the pairs it merged, how many really were the same incident",
                   },
                   {
-                    k: "— recall",
+                    k: "· recall",
                     f: (r: Row) => pct(r.dedupe.recall),
                     m: "of the true duplicate pairs, how many it caught",
                   },
@@ -200,7 +200,7 @@ export default function EvaluationPage() {
                   {
                     k: "P1 recall",
                     f: (r: Row) => pct(r.urgency.p1Recall),
-                    m: "the expensive error — a real P1 ranked lower",
+                    m: "the expensive error, a real P1 ranked lower",
                   },
                   {
                     k: "Wall clock",
@@ -259,7 +259,7 @@ export default function EvaluationPage() {
 
                 <Card className="p-5">
                   <p className="mono mb-3 text-[10px] uppercase tracking-[0.12em] text-ink-3">
-                    Urgency confusion — rows are truth
+                    Urgency confusion, rows are truth
                   </p>
                   <table className="w-full text-[13px]">
                     <thead>
@@ -317,7 +317,7 @@ export default function EvaluationPage() {
                 Swept across the labelled set. Precision falls as the threshold loosens
                 because unrelated complaints start merging; recall falls as it tightens
                 because re-reports in different words stop matching. We sit slightly
-                tight of the F1 peak on purpose — over-merging hides a complaint, and
+                tight of the F1 peak on purpose, because over-merging hides a complaint, and
                 that is the failure a resident never finds out about.
               </p>
               <Card className="mt-4 p-5">

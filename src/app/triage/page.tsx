@@ -85,7 +85,7 @@ export default function TriagePage() {
           <h1 className="mt-2 text-[30px] font-semibold tracking-tight">Triage console</h1>
           <p className="mt-2 max-w-[64ch] text-[15px] leading-relaxed text-ink-2">
             One morning&rsquo;s inbox, grouped into the incidents behind it. Every
-            complaint stays visible — grouping changes what the officer reads first,
+            complaint stays visible. Grouping changes what the officer reads first;
             it never deletes anything.
           </p>
         </div>
@@ -169,7 +169,7 @@ export default function TriagePage() {
           <p className="mx-auto mt-2 max-w-[52ch] text-[13px] leading-relaxed text-ink-2">
             Press <span className="font-medium text-ink">Run triage</span> and the model
             downloads into this tab (≈23 MB, once). The complaint text never leaves your
-            machine — that is what makes it usable on a live grievance inbox.
+            machine, which is what makes it usable on a live grievance inbox.
           </p>
         </Card>
       )}
@@ -210,7 +210,7 @@ export default function TriagePage() {
               </div>
               <div className="mt-2 text-[13px] font-medium">Reading time avoided</div>
               <div className="mt-1 text-[12px] text-ink-3">
-                assuming {2.5} min per ticket — our assumption, not a measurement
+                assuming {2.5} min per ticket, our assumption and not a measurement
               </div>
             </Card>
           </div>
@@ -282,7 +282,7 @@ export default function TriagePage() {
                     </div>
                     <p className="mt-2 text-[14px] leading-relaxed">{it.complaint.text}</p>
                     <p className="mt-2 rounded-md bg-p2-soft px-2.5 py-1.5 text-[12px] text-p2">
-                      Not routed — {it.abstainReason}
+                      Not routed. {it.abstainReason}
                     </p>
                   </Card>
                 ))}

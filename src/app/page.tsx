@@ -22,7 +22,7 @@ export default function Home() {
             <p className="mt-5 max-w-[56ch] text-[16px] leading-relaxed text-ink-2">
               A ward officer opens a shared inbox to two hundred complaints. Eleven of
               them are the same pothole. She reads all eleven, opens eleven tickets, and
-              the pothole is fixed once and closed once — the other ten stay open for
+              the pothole is fixed once and closed once. The other ten stay open for
               weeks with nobody looking at them.
             </p>
             <p className="mt-4 max-w-[56ch] text-[16px] leading-relaxed text-ink-2">
@@ -105,7 +105,7 @@ export default function Home() {
             {
               n: "01",
               t: "Group re-reports",
-              d: "Complete-linkage clustering on cosine similarity. A complaint joins an incident only if it clears the threshold against every member — single-linkage would chain unrelated reports together and bury one of them.",
+              d: "Complete-linkage clustering on cosine similarity. A complaint joins an incident only if it clears the threshold against every member. Single-linkage would chain unrelated reports together and bury one of them.",
             },
             {
               n: "02",
@@ -115,7 +115,7 @@ export default function Home() {
             {
               n: "03",
               t: "Rank the danger",
-              d: "Similarity to severity anchors, nudged by a small published hazard lexicon — open manhole, live wire, children, ambulance access. Reproducible, and a supervisor can read the rule.",
+              d: "Similarity to severity anchors, nudged by a small published hazard lexicon covering open manhole, live wire, children and ambulance access. Reproducible, and a supervisor can read the rule.",
             },
             {
               n: "04",
@@ -146,7 +146,7 @@ export default function Home() {
                 A confidently wrong desk costs a week
               </h3>
               <p className="mt-3 text-[14px] leading-relaxed text-ink-2">
-                Send a sewage overflow to the roads desk and it does not bounce back — it
+                Send a sewage overflow to the roads desk and it does not bounce back. It
                 sits in the wrong queue until someone notices, and the resident is told
                 it is &ldquo;under process&rdquo;. That is worse than the tool saying
                 nothing at all.
@@ -171,7 +171,7 @@ export default function Home() {
                   <div key={t} className="rounded-lg border border-line bg-card p-3">
                     <p className="text-[12.5px] leading-relaxed text-ink-2">{t}</p>
                     <p className="mt-1.5 text-[11px] text-p2">
-                      Not routed — no desk cleared the floor
+                      Not routed. No desk cleared the floor
                     </p>
                   </div>
                 ))}
@@ -219,7 +219,7 @@ export default function Home() {
             </p>
             <p>
               <span className="font-medium text-ink">Not a finding.</span> A P1 means
-              read this first. It does not assert that the road is unsafe — an engineer
+              read this first. It does not assert that the road is unsafe. An engineer
               on site decides that, exactly as today.
             </p>
             <p>
@@ -231,7 +231,7 @@ export default function Home() {
             <p>
               <span className="font-medium text-ink">Not sending anything anywhere.</span>{" "}
               The model runs in the browser tab. No API key, no server, no complaint text
-              in transit — which is what makes it deployable on a live inbox at all.
+              in transit, which is what makes it deployable on a live inbox at all.
             </p>
           </div>
         </Card>

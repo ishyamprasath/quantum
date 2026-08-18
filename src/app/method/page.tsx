@@ -7,7 +7,7 @@ const STAGES = [
   {
     n: "01",
     t: "Normalise",
-    d: "Complaints arrive from WhatsApp forwards, a portal form, email and phone notes. Casing, punctuation and transliterated Tamil are left alone — the sentence encoder handles them better than a regex would.",
+    d: "Complaints arrive from WhatsApp forwards, a portal form, email and phone notes. Casing, punctuation and transliterated Tamil are left alone, because the sentence encoder handles them better than a regex would.",
   },
   {
     n: "02",
@@ -46,7 +46,7 @@ export default function MethodPage() {
         <h1 className="mt-2 text-[30px] font-semibold tracking-tight">Method</h1>
         <p className="mt-2 max-w-[68ch] text-[15px] leading-relaxed text-ink-2">
           Six stages, all of them in the browser tab. Nothing here is a black box you
-          have to take on faith — every threshold below is swept on the labelled set and
+          have to take on faith. Every threshold below is swept on the labelled set and
           shown on the evaluation page.
         </p>
 
@@ -102,7 +102,7 @@ export default function MethodPage() {
 
           <Card className="p-5">
             <p className="mono text-[10px] uppercase tracking-[0.12em] text-ink-3">
-              Hazard lexicon — the whole of it
+              Hazard lexicon, the whole of it
             </p>
             <ul className="mt-3 space-y-1.5">
               {HAZARD_LEXICON.map((h) => (
@@ -119,7 +119,7 @@ export default function MethodPage() {
             </ul>
             <p className="mt-3 text-[12px] leading-relaxed text-ink-3">
               Nine rules, printed in full. If the tool ranks something oddly, an officer
-              can point at the line that did it — which is not true of a priority a
+              can point at the line that did it, which is not true of a priority a
               language model wrote.
             </p>
           </Card>
@@ -145,7 +145,7 @@ export default function MethodPage() {
               <p className="mt-3">
                 Merged, one of those two incidents disappears behind the other. The crew
                 goes to Ukkadam, the ticket closes, and the Sungam report closes with
-                it — and nobody involved ever learns that happened.
+                it, and nobody involved ever learns that happened.
               </p>
             </div>
             <div>

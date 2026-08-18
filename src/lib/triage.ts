@@ -210,10 +210,10 @@ export async function triage(
     let abstainReason: string | null = null;
     if (scores[0].score < thresholds.routeFloor) {
       dept = null;
-      abstainReason = `no desk scored above ${thresholds.routeFloor.toFixed(2)} — the text does not describe a specific issue`;
+      abstainReason = `no desk scored above ${thresholds.routeFloor.toFixed(2)}. The text does not describe a specific issue`;
     } else if (margin < thresholds.routeMargin) {
       dept = null;
-      abstainReason = `top two desks are ${margin.toFixed(3)} apart — could be ${scores[0].dept} or ${scores[1].dept}`;
+      abstainReason = `top two desks are ${margin.toFixed(3)} apart, so it could be ${scores[0].dept} or ${scores[1].dept}`;
     }
 
     const u = urgencyFrom(vecs[i], c.text, urgProtos);

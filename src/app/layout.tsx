@@ -3,7 +3,7 @@ import Link from "next/link";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "ONDRU — municipal grievance triage",
+  title: "ONDRU, municipal grievance triage",
   description:
     "On-device AI that groups duplicate civic complaints into one incident, routes them to a desk, ranks urgency, and refuses to guess when it is not sure.",
 };
@@ -61,7 +61,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <footer className="mt-24 border-t border-line">
           <div className="mx-auto flex max-w-[1180px] flex-col gap-2 px-5 py-8 text-[12px] text-ink-3 sm:flex-row sm:items-center sm:justify-between">
             <p>
-              ONDRU — decision support for a grievance desk. It ranks and groups; it
+              ONDRU is decision support for a grievance desk. It ranks and groups; it
               never closes a complaint.
             </p>
             <p>
