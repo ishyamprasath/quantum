@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+@theme {
+  --color-paper: #fbfbfa;
+  --color-card: #ffffff;
+  --color-ink: #14161c;
+  --color-ink-2: #454a56;
+  --color-ink-3: #767c8a;
+  --color-line: #e5e5e2;
+  --color-line-2: #d6d6d2;
+
+  --color-brand: #2f4bd6;
+  --color-brand-soft: #eef1fe;
+  --color-brand-ink: #1e2f8c;
+
+  --color-p1: #b91c1c;
+  --color-p1-soft: #fdeeee;
+  --color-p2: #a55b06;
+  --color-p2-soft: #fdf4e7;
+  --color-p3: #4b5563;
+  --color-p3-soft: #f2f3f5;
+
+  --color-good: #15803d;
+  --color-good-soft: #edf7f0;
+
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Inter, Roboto, sans-serif;
+  --font-mono: ui-monospace, "SF Mono", "Cascadia Mono", Menlo, Consolas, monospace;
+}
+
+* {
+  border-color: var(--color-line);
+}
+
+html {
+  color-scheme: light;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  font-feature-settings: "cv05", "ss01";
+}
+
+.mono {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+.rule {
+  background-image: linear-gradient(
+    to right,
+    var(--color-line) 0 6px,
+    transparent 6px 12px
+  );
+  background-size: 12px 1px;
+  background-repeat: repeat-x;
+  height: 1px;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fade-up {
+  animation: fadeUp 0.28s ease both;
+}
+
+::selection {
+  background: var(--color-brand-soft);
+}
